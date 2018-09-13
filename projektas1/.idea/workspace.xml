@@ -29,12 +29,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1513" />
+          <entry key="java" value="2591" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1513" />
+          <entry key="JAVA" value="2591" />
         </counts>
       </usages-collector>
     </session>
@@ -71,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/days/second/TreciasUzdavinys.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="153">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -150,7 +150,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536859857071" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536861717790" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -170,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AntrasUzdavinys">
+  <component name="RunManager" selected="Application.TreciasUzdavinys">
     <configuration name="AntrasUzdavinys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="days.second.AntrasUzdavinys" />
       <module name="projektas1" />
@@ -197,6 +197,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TreciasUzdavinys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="days.second.TreciasUzdavinys" />
+      <module name="projektas1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="days.second.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="first" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="days.first" />
       <module name="projektas1" />
@@ -214,9 +227,11 @@
       <item itemvalue="Application.first" />
       <item itemvalue="Application.FirstTask" />
       <item itemvalue="Application.AntrasUzdavinys" />
+      <item itemvalue="Application.TreciasUzdavinys" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreciasUzdavinys" />
         <item itemvalue="Application.AntrasUzdavinys" />
         <item itemvalue="Application.FirstTask" />
         <item itemvalue="Application.first" />
@@ -234,12 +249,12 @@
       <option name="presentableId" value="Default" />
       <updated>1536770659130</updated>
       <workItem from="1536770662466" duration="5373000" />
-      <workItem from="1536851953423" duration="5800000" />
+      <workItem from="1536851953423" duration="7962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11173000" />
+    <option name="totallyTimeSpent" value="13335000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,8 +346,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/days/second/TreciasUzdavinys.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="153">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
