@@ -1,14 +1,14 @@
 package days.second;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class KetvirtasUzdavinys {
     public static void main(String[] args) {
-        System.out.println("Iveskite savo ugi");
+
         Scanner scanner = new Scanner(System.in);
-        double ugis = scanner.nextDouble();
-        System.out.println("Iveskite savo svori");
-        double svoris = scanner.nextDouble();
+        double ugis = getCorrectNumb(scanner, "Iveskite ugi");
+        double svoris = getCorrectNumb(scanner, "Iveskite svori");
         kmi(ugis, svoris);
         System.out.println("Kmi yra" + kmi(ugis, svoris));
     }
@@ -19,4 +19,20 @@ public class KetvirtasUzdavinys {
 
 
     }
-}
+
+    private static double getCorrectNumb(Scanner scanner, String text) {
+        System.out.println(text);
+        double val = 0;
+        while (true) {
+            try {
+                val = scanner.nextDouble();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Blogai ivestas skaicius, pakartokite");
+                scanner.nextLine();
+            }
+        }
+            return val;
+
+        }
+    }
