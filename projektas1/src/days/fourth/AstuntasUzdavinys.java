@@ -4,7 +4,7 @@ import java.io.*;
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class EncodeExample {
+public class AstuntasUzdavinys {
     public static void main(String[] args) {
         Map<Integer, String> encodes = readEncodeFile();
         List<Integer> letters = readEncodedLetter();
@@ -13,30 +13,31 @@ public class EncodeExample {
 
         letters.forEach(p -> sb.append(encodes.get(p)));
 
-        writeToFile(sb);
+        writeToFile(sb, "result.txt");
 
         System.out.println(sb.toString());
+        uzkoduotiTeksta(encodes);
 
     }
 
-    private static void writeToFile(StringBuilder sb){
-        try(BufferedWriter bw = new BufferedWriter(new FileWriter("result.txt"))){
+    private static void writeToFile(StringBuilder sb,String fileName) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(fileName))) {
             bw.write(sb.toString());
-        }catch (IOException e){
+        } catch (IOException e) {
             System.out.println(e);
         }
     }
 
-    private static List<Integer> readEncodedLetter(){
+    private static List<Integer> readEncodedLetter() {
         List<Integer> letters = new ArrayList<>();
 
-        try(BufferedReader bf = new BufferedReader(new FileReader("uzkuodotasLaiskas.txt"))){
+        try (BufferedReader bf = new BufferedReader(new FileReader("uzkuodotasLaiskas.txt"))) {
             String line;
-            while ((line = bf.readLine()) != null){
+            while ((line = bf.readLine()) != null) {
                 String[] items = line.split(" ");
                 Arrays.asList(items).forEach(v -> letters.add(Integer.parseInt(v)));
             }
-        }catch (IOException e){
+        } catch (IOException e) {
             System.out.println(e);
         }
 
@@ -64,5 +65,22 @@ public class EncodeExample {
             System.out.println(e);
         }
         return encodes;
+    }
+    private static void uzkoduotiTeksta (Map<Integer, String> koduote){
+        System.out.println("Iveskite, ka norite uzkoduoti?");
+        Scanner sc = new Scanner(System.in);
+        String word = sc.nextLine();
+        char [] line =word.toCharArray();
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i <line.length; i++){
+            String raide = String.valueOf(line[i]);
+            koduote.forEach((k, v)->{
+                if(raide.equals(v)){
+                    sb.append(k).append(" ");
+                }
+            });
+        }
+        writeToFile(sb,"UzkoduotasRezultatas.txt" );
+
     }
 }
